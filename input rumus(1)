@@ -21,6 +21,5 @@
         <input type="submit" value="Hitung"style="margin-left: 50px;">
         <input type="reset" value="Batal">
         </form>
-
     </body>
 </html>
