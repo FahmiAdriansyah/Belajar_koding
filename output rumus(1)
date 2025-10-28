@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Hasil Hitung Rumus</title>
+    </head>
+    <body>
+        <h1>Hasil Hitung Rumus</h1>
+    <?php
+    $nilai1=$_POST["nilai1"];
+    $nilai2=$_POST["nilai2"];
+    $rumus=$_POST["rumus"];
+
+    echo "Nilai a adalah = $nilai1<br>";
+    echo "Nilai b adalah = $nilai2<br>";
+    echo "Rumus yang dipilih adalah = $rumus<br>";
+
+    if ($nilai1 == 0 && $nilai2 == 0) {
+        echo "Tidak ada hasil perhitungan karena kedua nilai bernilai 0.<br>";
+    } else {
+        if ($rumus == "segitiga") {
+            $hasil = 0.5 * $nilai1 * $nilai2;
+            echo "Hasil perhitungan rumus = $hasil<br>";
+        } elseif ($rumus == "persegi panjang") {
+            $hasil = $nilai1 * $nilai2;
+            echo "Hasil perhitungan rumus = $hasil<br>";
+        } else {
+            echo "Pilihan rumus tidak dikenali.<br>";
+        }
+    }
+    ?>
+    <a href="tugas04.php">Kembali Menghitung</a>
+    </body>
+</html>
